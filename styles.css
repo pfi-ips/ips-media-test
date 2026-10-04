@@ -36,3 +36,15 @@ body{font:13px/1.35 Arial,Helvetica,sans-serif!important}
 .method-layout{padding:19px 0!important}.method-layout>div>p{font-size:11px!important;margin:6px 0!important}.method-steps>div{padding:5px 0!important}.method-steps strong{font-size:11px!important}.method-steps p{font-size:9px!important}
 .closing{padding:22px 0!important}.closing p{font-size:11px!important;margin-bottom:8px!important}.footer-inner{padding:14px 0!important}
 @media(max-width:760px){.page-shell{width:calc(100% - 22px)!important}.site-header{padding:7px 11px!important}.hero-layout{grid-template-columns:1fr!important}.hero-art{height:95px!important;max-width:none!important}.hero h1{font-size:27px!important}.feature-card{grid-template-columns:110px 1fr!important}.feature-visual{min-height:130px!important}.visual-figure{font-size:38px!important}.feature-visual:before{display:none}.feature-copy{padding:10px!important}.feature-copy h3{font-size:15px!important}.rubric-grid{grid-template-columns:1fr!important}.rubric{min-height:100px!important}.topic-family{grid-template-columns:1fr!important}.topic-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}.method-layout{grid-template-columns:1fr!important}}
+
+/* v0.4 balanced: restore readable central measure, keep vertical density */
+.page-shell{width:min(1020px,calc(100% - 48px))!important;max-width:1020px!important}
+.site-header{padding-left:max(22px,calc((100vw - 1020px)/2))!important;padding-right:max(22px,calc((100vw - 1020px)/2))!important}
+.hero-layout{grid-template-columns:minmax(0,1.3fr) minmax(190px,.7fr)!important;gap:24px!important}
+.hero-art{max-width:225px!important}
+.feature-card{grid-template-columns:190px minmax(0,1fr)!important}
+.section-intro{grid-template-columns:1.1fr .9fr!important;gap:25px!important}
+.rubric-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.topic-family{grid-template-columns:205px minmax(0,1fr)!important}
+.topic-list{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:760px){.page-shell{width:calc(100% - 24px)!important}.site-header{padding:7px 12px!important}.hero-layout,.section-intro,.topic-family{grid-template-columns:1fr!important}.feature-card{grid-template-columns:110px minmax(0,1fr)!important}.rubric-grid{grid-template-columns:1fr!important}.topic-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
