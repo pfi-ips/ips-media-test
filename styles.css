@@ -48,3 +48,5 @@ body{font:13px/1.35 Arial,Helvetica,sans-serif!important}
 .topic-family{grid-template-columns:205px minmax(0,1fr)!important}
 .topic-list{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 @media(max-width:760px){.page-shell{width:calc(100% - 24px)!important}.site-header{padding:7px 12px!important}.hero-layout,.section-intro,.topic-family{grid-template-columns:1fr!important}.feature-card{grid-template-columns:110px minmax(0,1fr)!important}.rubric-grid{grid-template-columns:1fr!important}.topic-list{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+.brand-logo{display:block;height:42px;width:auto;max-width:168px;object-fit:contain;object-position:left center;flex:none}
