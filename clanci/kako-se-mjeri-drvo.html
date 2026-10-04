@@ -13,7 +13,7 @@
 <div class="site-frame">
 <aside class="site-sidebar" aria-label="IPŠ navigacija">
  <a class="brand" href="../index.html" aria-label="IPŠ naslovnica"><img class="brand-logo" src="../assets/ipsh-logo-full.png" alt="Inicijativa ZA privatne šume"><span class="brand-copy"><small>Šumsko novinarstvo i popularizacija</small></span></a>
- <details class="sidebar-menu">
+ <details class="sidebar-menu" open>
   <summary>Izbornik</summary>
   <div class="sidebar-menu-content">
    <nav class="primary-nav" aria-label="Glavna navigacija">
@@ -63,5 +63,6 @@
 </main>
 <footer><div>IPŠ · Inicijativa ZA privatne šume</div><div>Eksperimentalna publikacija · 2026</div></footer>
 </div></div>
+<script>document.querySelector('.sidebar-menu').open=matchMedia('(min-width:701px)').matches;</script>
 </body>
 </html>
