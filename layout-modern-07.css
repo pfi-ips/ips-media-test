@@ -10,7 +10,7 @@
   --sage:#e7ede3;
   --line:#d5dbd1;
   --muted:#59665f;
-  --rust:#bd5937;
+  --rust:#a34227;
   --sun:#e9bd67;
   --shell:1180px;
   --sans:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
@@ -102,7 +102,7 @@ h1,h2,h3,h4,p{margin-top:0}
 .rubric{min-height:205px;padding:17px 20px 14px;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;border-right:1px solid #ffffff50;background:transparent}
 .rubric:first-child{padding-left:0}
 .rubric:last-child{border-right:0}
-.rubric-first{color:var(--forest)}
+.rubric-first{background:var(--sage);color:var(--forest)}
 .rubric-first:before{content:"";position:absolute}
 .rubric-num,.rubric-type,.rubric-state{font-size:10px;font-weight:700;letter-spacing:.075em}
 .rubric-num{color:#e9bd67}
