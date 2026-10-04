@@ -260,4 +260,4 @@ footer{background:#122f26;color:#edf2e9}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition:none!important}
 }
-@media(max-width:380px){.site-header nav{gap:4px;font-size:10px}}
+@media(max-width:380px){.sidebar-menu>summary{padding:8px 9px;font-size:11px}}
