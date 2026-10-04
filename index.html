@@ -12,7 +12,7 @@
 <div class="site-frame">
 <aside class="site-sidebar" aria-label="IPŠ navigacija">
  <a class="brand" href="./" aria-label="IPŠ naslovnica"><img class="brand-logo" src="assets/ipsh-logo-full.png" alt="Inicijativa ZA privatne šume"><span class="brand-copy"><small>Šumsko novinarstvo i popularizacija</small></span></a>
- <details class="sidebar-menu">
+ <details class="sidebar-menu" open>
   <summary>Izbornik</summary>
   <div class="sidebar-menu-content">
    <nav class="primary-nav" aria-label="Glavna navigacija">
@@ -59,6 +59,6 @@
 <footer><div class="footer-inner page-shell"><a class="brand" href="./"><span class="footer-name">Inicijativa ZA privatne šume</span></a><div><span>PROTOTIP V0.7 / 2026</span><p>Urednička arhitektura u razvoju. Sadržaji s navedenom probnom oznakom nisu završeni stručni vodiči.</p></div><a href="#sadrzaj">Natrag na vrh ↑</a></div></footer>
 </div></div>
 <script>
-(()=>{const links=[...document.querySelectorAll('.sidebar-menu-content a[href^="#"]')];const targets=links.map(a=>({a,el:document.getElementById(a.getAttribute('href').slice(1))})).filter(x=>x.el);const update=()=>{let current=null;for(const x of targets){if(x.el.getBoundingClientRect().top<=innerHeight*.42)current=x}if(current){links.forEach(a=>a.removeAttribute('aria-current'));current.a.setAttribute('aria-current','location')}};addEventListener('scroll',update,{passive:true});update()})();
+(()=>{const menu=document.querySelector('.sidebar-menu');menu.open=matchMedia('(min-width:701px)').matches;const links=[...document.querySelectorAll('.sidebar-menu-content a[href^="#"]')];const targets=links.map(a=>({a,el:document.getElementById(a.getAttribute('href').slice(1))})).filter(x=>x.el);const update=()=>{let current=null;for(const x of targets){if(x.el.getBoundingClientRect().top<=innerHeight*.42)current=x}if(current){links.forEach(a=>a.removeAttribute('aria-current'));current.a.setAttribute('aria-current','location')}};addEventListener('scroll',update,{passive:true});update()})();
 </script>
 </body></html>
