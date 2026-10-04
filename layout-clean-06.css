@@ -3,3 +3,5 @@
 
 .brand-logo{display:block;height:42px;width:auto;max-width:168px;object-fit:contain;object-position:left center;flex:none}
 .footer-name{font-weight:700}
+
+.article p:not(.dek),.article li{font-size:15px;line-height:1.5}
