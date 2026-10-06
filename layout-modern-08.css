@@ -1,17 +1,17 @@
-/* IPŠ media prototype v0.8 — centered editorial layout with quiet print-era accent */
+/* IPŠ media prototype v0.9 — centered editorial layout with quiet print-era accent */
 :root{
   color-scheme:light;
-  --paper:#f7f7f1;
-  --paper-bright:#fffefa;
-  --ink:#1d2924;
-  --forest:#173d31;
-  --forest-2:#2c5a45;
-  --moss:#71866b;
-  --sage:#e7ede3;
-  --line:#d5dbd1;
-  --muted:#59665f;
-  --rust:#a34227;
-  --sun:#e9bd67;
+  --paper:#f4f0e6;
+  --paper-bright:#fffdf7;
+  --ink:#202d26;
+  --forest:#173b2f;
+  --forest-2:#35634a;
+  --moss:#78886a;
+  --sage:#e7e9dc;
+  --line:#d5d5c9;
+  --muted:#515e56;
+  --rust:#a3472f;
+  --sun:#e7bd68;
   --shell:1180px;
   --sans:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --serif:Georgia,"Times New Roman",serif;
@@ -72,14 +72,15 @@ h1,h2,h3,h4,p{margin-top:0}
 .btn-dark:hover{background:var(--rust);border-color:var(--rust);text-decoration:none}
 .btn-line{background:transparent;color:var(--forest)}
 .btn-line:hover{background:var(--sage);text-decoration:none}
-.hero-art{position:relative;display:block;min-height:172px;overflow:hidden;background:var(--sage);color:var(--forest);border:1px solid #d6dfd1;border-radius:2px;isolation:isolate}
-.hero-art:before{content:"";position:absolute;inset:0;z-index:-1;background:
-  radial-gradient(ellipse at 74% 22%,#a34227 0 6%,transparent 6.5%),
-  repeating-radial-gradient(ellipse at 77% 110%,transparent 0 18px,#71866b70 19px 20px,transparent 21px 31px),
-  linear-gradient(157deg,#edf1e9 0 49%,#e1e9dd 49.2% 100%)}
-.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#e7ede3 0%,transparent 52%);opacity:.22;z-index:-1}
-.art-sun,.hill,.tree{display:none}
-.art-caption{position:absolute;left:16px;right:16px;bottom:12px;display:flex;justify-content:space-between;gap:10px;border-top:1px solid #173d3150;padding-top:7px;font-size:9px;font-weight:750;letter-spacing:.1em}
+.hero-art{position:relative;display:flex;align-items:center;gap:clamp(16px,2.5vw,30px);min-height:172px;overflow:hidden;padding:22px;background:linear-gradient(135deg,#e9ecdf 0%,#f7f1e4 100%);color:var(--forest);border:1px solid #d7d3c5;border-radius:2px;isolation:isolate}
+.hero-art:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 0 64%,#a3472f0c 64.2% 100%)}
+.hero-stat{display:flex;align-items:baseline;gap:9px;padding-right:clamp(14px,2vw,24px);border-right:1px solid #a3472f70}
+.hero-stat strong{color:var(--forest);font:500 clamp(56px,7vw,78px)/.85 var(--serif);letter-spacing:-.07em}
+.hero-stat span{color:var(--rust);font-size:11px;font-weight:750;line-height:1.25;letter-spacing:.04em}
+.hero-art-copy{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.hero-art-kicker{color:var(--rust);font-size:10px;font-weight:750;letter-spacing:.12em}
+.hero-art-copy>strong{color:var(--forest);font:500 clamp(20px,2.4vw,28px)/1.03 var(--serif);letter-spacing:-.02em}
+.hero-art-note{margin-top:5px;color:var(--muted);font-size:9px;font-weight:750;letter-spacing:.09em}
 
 .marquee{background:var(--sage);border-block:1px solid #d5dfd0}
 .marquee-inner{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -165,7 +166,7 @@ footer{background:#122f26;color:#edf2e9}
 .footer-inner>div{max-width:450px}
 .footer-inner>div>span{font-size:10px;font-weight:750;letter-spacing:.09em;color:#e9bd67}
 .footer-inner p{margin:5px 0 0;color:#d0dbd0;font-size:11px;line-height:1.4}
-.footer-name{font-weight:750}
+.footer-brand{gap:10px}.footer-logo{display:block;width:34px;height:34px;object-fit:contain;flex:none;background:#fff;border:1px solid #ffffff55}.footer-name{font-weight:750}.article-footer-brand{display:flex;align-items:center;gap:10px;font-weight:700}
 .footer-inner>a:last-child{white-space:nowrap}
 .mark{background:#dce8d5;color:var(--forest);border-radius:50%;padding:10px;font-size:10px}
 .article{max-width:780px;margin:0 auto;padding:40px 24px 58px}
@@ -192,6 +193,7 @@ footer{background:#122f26;color:#edf2e9}
   .method-layout{gap:30px}
 }
 @media(max-width:700px){
+  .hero-art{min-height:152px;padding:18px}.hero-art-note{font-size:8px}
   html{scroll-padding-top:16px}
   .site-frame{width:100%}
   .masthead{padding:9px 16px}
